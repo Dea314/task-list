@@ -59,10 +59,9 @@ function App() {
     <div className="App">
       <form onSubmit={handleSubmit} className="form">
         <label className="label">
-          Add task...
-          <input type="text" name="todo" />
+          <input type="text" name="todo" placeholder="Add task.." />
         </label>
-        <input type="submit" value="Add" />
+        <input type="submit" value="Add" className="submit" />
       </form>
       <div id="list">
         {list.map((listItem, i) => (
